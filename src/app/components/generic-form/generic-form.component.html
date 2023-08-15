@@ -1,0 +1,12 @@
+<form [formGroup]="myForm">
+  <div *ngFor="let control of jsonFormData?.controls">
+    <label>{{ control.label }}</label>
+    <input
+      *ngIf="control.type !== 'radio'"
+      [type]="control.type"
+      [formControlName]="control.name"
+      [value]="control.value"
+    />
+  </div>
+  <button (onClick)="onButtonClicked()">Submit</button>
+</form>

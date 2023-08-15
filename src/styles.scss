@@ -1,0 +1,23 @@
+// / You can add global styles to this file, and also import other style files /
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+:root {
+  --primaryclr: #00b2c4;
+  --secondaryclr: #eef8ff;
+
+  --hoverclr: #02abbe;
+  --activeclr: #4bc8d6;
+
+  --primary-clr-text: #1c415b;
+  --secondary-clr-text: #647f91;
+}
+
+.wrapper-layout {
+  height: 100%;
+  background: #f1f4f6;
+}
+.hide-sidebar .wrapper-content {
+  margin-left: 0;
+}
