@@ -9,6 +9,8 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class GenericFormComponent implements OnInit {
   jsonFormData: any;
+  formData: any;
+  formSelected: boolean = false;
   myForm: FormGroup = this.fb.group({});
 
   constructor(private dataService: DataService, private fb: FormBuilder) {
@@ -19,7 +21,12 @@ export class GenericFormComponent implements OnInit {
 
   ngOnInit(): void {
     console.log(this.jsonFormData);
-    this.createForm(this.jsonFormData.controls);
+    // this.createForm(this.jsonFormData.controls);
+  }
+  onFormSelected(formData: any) {
+    this.createForm(formData.controls);
+    this.formData = formData;
+    this.formSelected = true;
   }
 
   createForm(controls: any) {

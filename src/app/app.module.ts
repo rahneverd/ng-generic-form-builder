@@ -11,6 +11,7 @@ import { GenericFormBuilderComponent } from './components/generic-form-builder/g
 import { GenericFormComponent } from './components/generic-form/generic-form.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { ControlsTrayComponent } from './components/controls-tray/controls-tray.component';
+import { DrawingAreaComponent } from './components/drawing-area/drawing-area.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +19,7 @@ import { ControlsTrayComponent } from './components/controls-tray/controls-tray.
     GenericFormBuilderComponent,
     MenuComponent,
     ControlsTrayComponent,
+    DrawingAreaComponent,
   ],
   imports: [
     BrowserModule,

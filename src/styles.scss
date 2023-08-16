@@ -3,21 +3,42 @@
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
 
-:root {
-  --primaryclr: #00b2c4;
-  --secondaryclr: #eef8ff;
-
-  --hoverclr: #02abbe;
-  --activeclr: #4bc8d6;
-
-  --primary-clr-text: #1c415b;
-  --secondary-clr-text: #647f91;
+.wrapper-main {
+  display: flex;
+}
+.left-sidebar {
+  padding: 10px;
+  height: 100vh;
+  background-color: #d55057;
+}
+.p-menu {
+  border: none;
+  background-color: #d55057;
+  color: white;
+}
+.p-menuitem-text {
+  color: white !important;
 }
 
-.wrapper-layout {
-  height: 100%;
-  background: #f1f4f6;
+.p-menuitem-content:hover {
+  background-color: #c74950 !important;
 }
-.hide-sidebar .wrapper-content {
-  margin-left: 0;
+.p-menu
+  .p-menuitem:not(.p-highlight):not(.p-disabled).p-focus
+  > .p-menuitem-content {
+  background: #e0848a;
+}
+.sectionmain {
+  padding: 10px;
+  background-color: #e9ecef;
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+.w-75 {
+  width: 75%;
+}
+.w-25 {
+  width: 25%;
 }

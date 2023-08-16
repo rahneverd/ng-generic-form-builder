@@ -8,7 +8,7 @@ import { MenuItem } from 'primeng/api';
   styleUrls: ['./menu.component.scss'],
 })
 export class MenuComponent {
-  sidebarVisible: boolean = false;
+  sidebarVisible: boolean = true;
   itemsstatic: MenuItem[] = [
     {
       label: 'Form Builder',
@@ -17,7 +17,7 @@ export class MenuComponent {
       command: () => {
         // this.activeMenu(event);
         this.sidebarVisible = false;
-        this.router.navigate(['genericFormBuilder']);
+        this.router.navigate(['']);
       },
     },
     {

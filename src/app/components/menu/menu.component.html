@@ -1,41 +1,17 @@
-<div class="miniSidebar" id="ssominiSidebar">
-  <div class="sidebar-toggle-btns">
-    <button
-      pButton
-      type="button"
-      (click)="onOpenningMenu()"
-      icon="pi icon icon-sidebar"
-      [ngClass]="sidebarVisible === false ? '' : 'fl-hidden'"
-      class="png-button-rounded p-button-rounded"
-    ></button>
-
-    <button
-      pButton
-      type="button"
-      (click)="sidebarVisible = false"
-      icon="pi pi-times"
-      [ngClass]="sidebarVisible === true ? '' : 'fl-hidden'"
-      class="png-button-rounded p-button-rounded"
-    ></button>
-  </div>
-</div>
-
-<div class="png-sidebar-wrapper">
-  <p-sidebar [(visible)]="sidebarVisible">
+<div class="left-sidebar">
+  <!-- <p-sidebar [(visible)]="sidebarVisible">
     <ng-template pTemplate="header">
       <p class="sidebar-heading">GFB</p>
     </ng-template>
-    <ng-template pTemplate="content">
-      <!-- faisal added static MENU-->
-      <div class="static-menu-primeng">
-        <p-menu [model]="itemsstatic"></p-menu>
-      </div>
-    </ng-template>
-  </p-sidebar>
+    <ng-template pTemplate="content"> -->
+  <!-- faisal added static MENU-->
+  <div class="static-menu-primeng">
+    <p-menu [model]="itemsstatic"></p-menu>
+  </div>
+  <!-- </ng-template>
+  </p-sidebar> -->
 </div>
 
 <section class="sectionmain">
-  <section class="sectioncontent">
-    <router-outlet> </router-outlet>
-  </section>
+  <router-outlet> </router-outlet>
 </section>

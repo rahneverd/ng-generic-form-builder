@@ -5,7 +5,7 @@ import { GenericFormComponent } from './components/generic-form/generic-form.com
 
 const routes: Routes = [
   { path: 'genericForm', component: GenericFormComponent },
-  { path: 'genericFormBuilder', component: GenericFormBuilderComponent },
+  { path: '', component: GenericFormBuilderComponent },
 ];
 
 @NgModule({

@@ -1,5 +1,14 @@
-<form [formGroup]="myForm">
-  <div *ngFor="let control of jsonFormData?.controls">
+<div>
+  <p-button
+    *ngFor="let form of jsonFormData"
+    [label]="form.name"
+    (onClick)="onFormSelected(form)"
+  ></p-button>
+</div>
+
+<form [formGroup]="myForm" *ngIf="formSelected">
+  <h3>{{ formData.name }}</h3>
+  <div *ngFor="let control of formData.controls">
     <label>{{ control.label }}</label>
     <input
       *ngIf="control.type !== 'radio'"

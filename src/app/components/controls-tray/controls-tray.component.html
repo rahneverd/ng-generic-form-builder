@@ -1,1 +1,8 @@
-<p>controls-tray works!</p>
+<div>
+  <div *ngFor="let control of controls" class="flex">
+    <div class="control-name w-75">{{ control.name }}</div>
+    <div class="control-button w-25">
+      <p-button icon="pi pi-plus" (onClick)="addControl(control)"></p-button>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,7 @@
-<p>generic-form-builder works!</p>
+<div class="createForm-main" *ngIf="!createNewForm">
+  <p-button label="Create new form" (onClick)="onCreateNewForm()"></p-button>
+</div>
+<div class="flex" *ngIf="createNewForm">
+  <app-drawing-area class="w-75"></app-drawing-area
+  ><app-controls-tray class="w-25"></app-controls-tray>
+</div>
