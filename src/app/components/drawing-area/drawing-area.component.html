@@ -1,2 +1,16 @@
 <p>drawing-area works!</p>
-<p *ngIf="showForm">drawing-area works!</p>
+<div class="drawingArea-Form" *ngIf="showForm">
+  <div class="flex" *ngFor="let control of jsonCurrentForm">
+    {{ control | json }}
+    <div>
+      <p-button icon="pi pi-bars"></p-button>
+    </div>
+    <div class="flex flex-vertical">
+      <div>{{ control.labelEnglish }}</div>
+      <div>{{ control.value }}</div>
+    </div>
+    <div>
+      <p-button icon="pi pi-trash"></p-button>
+    </div>
+  </div>
+</div>

@@ -2,6 +2,14 @@
   <p-button label="Create new form" (onClick)="onCreateNewForm()"></p-button>
 </div>
 <div class="flex" *ngIf="createNewForm">
-  <app-drawing-area class="w-75"></app-drawing-area
-  ><app-controls-tray class="w-25"></app-controls-tray>
+  <app-drawing-area class="w-75"></app-drawing-area>
+
+  <p-tabView>
+    <p-tabPanel header="Header I">
+      <app-controls-tray class="w-25"></app-controls-tray>
+    </p-tabPanel>
+    <p-tabPanel header="Header II">
+      <app-properties></app-properties>
+    </p-tabPanel>
+  </p-tabView>
 </div>

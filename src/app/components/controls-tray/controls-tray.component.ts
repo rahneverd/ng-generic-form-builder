@@ -18,7 +18,10 @@ export class ControlsTrayComponent {
   addControl(control: any) {
     this.dataService.setJsonCurrentFormData({
       name: control.name,
-      label: control.label,
+      labelEnglish: control.labelEnglish,
+      labelArabic: control.labelArabic,
+      descriptionEnglish: control.descriptionEnglish,
+      descriptionArabic: control.descriptionArabic,
       value: control.value,
       type: control.type,
       validators: {

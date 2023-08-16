@@ -115,7 +115,10 @@ export class DataService {
   jsonFormControls = new BehaviorSubject<any>([
     {
       name: 'PhoneNumber',
-      label: 'Phone Number',
+      labelEnglish: 'Phone Number',
+      labelArabic: 'Phone Number',
+      descriptionEnglish: 'Phone Number',
+      descriptionArabic: 'Phone Number',
       value: '',
       type: 'number',
       validators: {
